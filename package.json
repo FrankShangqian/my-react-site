@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "ajv": "^6.12.6",
-    "ajv-keywords": "^3.5.2",
     "pdfjs-dist": "^3.11.174",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -33,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "ajv-keywords": "3",
     "gh-pages": "^6.3.0"
   },
   "engines": {
@@ -40,6 +40,6 @@
   },
   "overrides": {
     "ajv": "^6.12.6",
-    "ajv-keywords": "^3.5.2"
+    "ajv-keywords": "3"
   }
 }
