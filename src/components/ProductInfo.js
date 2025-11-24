@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProductInfo.css';
 
-const ProductInfo = ({ onOpenBrochure }) => {
+const ProductInfo = () => {
   const features = [
     { icon: '🧠', title: '一键测量与扫描', description: '一键测量、一键扫描，操作简单、效率更高' },
     { icon: '🔌', title: '多仪器接入', description: '支持全站仪、南方等多种设备与接口接入' },
@@ -33,13 +33,6 @@ const ProductInfo = ({ onOpenBrochure }) => {
 
   const handleImageError = () => {
     setShowImage(false);
-  };
-
-  // 点击按钮在应用内切换到“宣传册”页
-  const handleOpenBrochure = () => {
-    if (typeof onOpenBrochure === 'function') {
-      onOpenBrochure();
-    }
   };
 
   return (
@@ -91,14 +84,6 @@ const ProductInfo = ({ onOpenBrochure }) => {
         </div>
       </div>
 
-      <div className="cta-section">
-        <h3>立即体验</h3>
-        <p>查看完整的产品宣传册，了解更多技术细节和应用案例</p>
-        <button className="cta-button" onClick={handleOpenBrochure}>
-          <span>📄</span>
-          查看宣传册
-        </button>
-      </div>
     </div>
   );
 };
