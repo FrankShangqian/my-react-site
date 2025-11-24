@@ -1,0 +1,45 @@
+{
+  "name": "tunnel-robot-showcase",
+  "version": "1.0.0",
+  "description": "隧道综合量测机器人产品展示网页",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "ajv": "^6.12.6",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-pdf": "^7.6.0",
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "ajv-keywords": "3",
+    "gh-pages": "^6.3.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "overrides": {
+    "ajv": "^6.12.6",
+    "ajv-keywords": "3"
+  }
+}
