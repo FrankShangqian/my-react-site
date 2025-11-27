@@ -363,6 +363,11 @@
   .hero-description {
     font-size: 1rem;
   }
+
+  .video-play-button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
   
   .features-section, .specifications-section {
     margin-bottom: 2rem;
@@ -425,6 +430,15 @@
   
   .hero-description {
     font-size: 0.9rem;
+  }
+
+  .video-play-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .video-icon {
+    font-size: 1rem;
   }
   
   .features-section, .specifications-section {
