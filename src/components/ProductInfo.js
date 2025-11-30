@@ -35,10 +35,6 @@ const ProductInfo = () => {
     setShowImage(false);
   };
 
-  const handlePlayVideo = () => {
-    window.open('https://www.bilibili.com/video/BV1EKUzBaEos/?vd_source=eb3a763f33da8c162da4e6c6c62bcceb', '_blank');
-  };
-
   return (
     <div className="product-info">
       <div className="hero-section">
@@ -48,12 +44,6 @@ const ProductInfo = () => {
           自主导航、自动调平与实时上传分析，适用于隧道开挖面与结构状态的快速、
           安全、精准量测，显著降低人力投入并提升作业效率。
         </p>
-        <div className="video-button-container">
-          <button className="video-play-button" onClick={handlePlayVideo}>
-            <span className="video-icon">▶</span>
-            <span>点击播放介绍视频</span>
-          </button>
-        </div>
         {showImage && (
           <div className="hero-image">
             <div className="image-wrapper">
