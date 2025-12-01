@@ -35,6 +35,14 @@ const ProductInfo = () => {
     setShowImage(false);
   };
 
+  const handlePlayVideo = () => {
+    window.open(
+      'https://www.bilibili.com/video/BV1Y8S6BZEjT/?vd_source=eb3a763f33da8c162da4e6c6c62bcceb',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
+
   return (
     <div className="product-info">
       <div className="hero-section">
@@ -57,6 +65,14 @@ const ProductInfo = () => {
             <p className="image-caption">隧道综合量测机器人（示意图）</p>
           </div>
         )}
+
+        <div className="video-button-container">
+          <button type="button" className="video-play-button" onClick={handlePlayVideo}>
+            <span className="video-icon" aria-hidden="true">▶</span>
+            点击播放介绍视频
+          </button>
+          <p className="video-note">Bilibili 演示 · 新窗口播放</p>
+        </div>
       </div>
 
       <div className="features-section">
